@@ -1,0 +1,82 @@
+body{
+	background-image:url(finalbkg.png);
+	background-size:auto 650px;
+	background-repeat:no-repeat;
+	background-color:#003300;
+	font-family:"Comic Sans MS";
+	color:rgb(255, 204, 0);
+	height:10000px;
+	overflow:auto;
+	/* animation-name:slide;
+	animation-duration:3s; */
+}
+@keyframes bone{
+	from {background-color:rgb(255, 204, 0);}
+	to {background-color:purple;}
+}
+@keyframes slide{
+	/* from {background-image:url(slidebowl.jpg);}
+	to {background-image:url(slideburrito.jpg);} */
+}
+h1{
+	color:rgb(255, 204, 0);
+	text-align:center;
+	font-family:"Comic Sans MS";
+	font-size:100px;
+	-webkit-text-stroke: 2.6px black;
+	overflow:hidden;
+}
+ul{
+	list-style:none;
+	position:fixed;
+	top:0;
+	margin:0px;
+}
+li{
+	font-size:15px;
+	padding:7px;
+	border-style:ridge;
+	border-width:2.6px;
+	border-color:black;
+	background-color:rgb(255, 204, 0);
+	border-radius:30px;
+	float:left;
+	box-sizing: border-box;
+	font-family:"Comic Sans MS";
+	color:black;
+	font-weight:bold;
+}
+a{
+	text-decoration:none;
+}
+li:hover{
+	animation-name:bone;
+	animation-duration:1.5s;
+	animation-fill-mode:forwards;
+}
+a:visited, a:link{
+	color:black;
+	font-family:inherit;
+	text-decoration:none;
+}
+#headerP{
+	text-align:center;
+	font-weight:bold;
+	font-size:3vw;
+	-webkit-text-stroke: 0.15vw black;
+}
+#boneZones{
+	width:100px;
+	height:50px;
+}
+#boneZones:hover{
+	width:110px;
+	height:60px;
+}
+#head{
+	width:1325px;
+}
+
+/* Original font-size
+#headerP 3vw
+h1 7vw */

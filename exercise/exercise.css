@@ -1,0 +1,73 @@
+        body{
+            background:gray;
+            color:white;
+            font-family:sans-serif;
+        }
+        ul{
+            list-style-type:none;
+            margin:0px;
+            padding:0;
+            position:fixed;
+            width:100%;
+        }
+        li{
+           float:left;
+           border:3px solid purple;
+        }
+        li a{
+            display:block;
+            background:darkgray;
+            width:100px;
+            padding:10px;
+            text-align:center;
+            border-style:ridge;
+            text-decoration:none;
+        }
+        li a:hover{
+            background:forestgreen;
+            color:white;
+        }
+        h1, h3{
+            margin-left:50px;
+            margin-right:50px;
+            text-shadow:2px 2px black;
+        }
+        h3{
+            padding-left:70px;
+            padding-right:70px;
+            display:inline-block;
+        }
+        #exerciseTable, #setsAndReps, img{
+            display:inline-block;
+            margin-left:100px;
+            background:darkgray;
+            border:3px solid purple;
+            color:purple;
+            border-style:ridge;
+            width:350px;
+        }
+        img{
+            height:200px;
+        }
+        #sideH, #sideI{
+            margin-right:100px;
+            float:right;
+        }
+        #sideH{
+            margin-right:270px;
+        }
+        #setsAndReps{
+            display:inline-block;
+            float:right;
+            margin-right:100px;
+        }
+        #headerEL, #headerSR{
+            display:inline-block;
+        }
+        #headerEL, #headerSR{
+            padding-top:30px;
+        }
+        #headerSR{
+            float:right;
+            margin-right:280px;
+        }

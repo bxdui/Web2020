@@ -1,0 +1,80 @@
+body{
+	background: rgba(202, 141, 252, 0.5) linear-gradient(rgba(102, 0, 102, 0), rgba(102, 0, 102, 1)) repeat-x scroll center;
+	color:purple;
+	height:1800px;
+}
+p{
+	margin-top:0px;
+	text-shadow: 2px 2px 0px white;
+}
+#nav ul{
+	position:fixed;
+	float:top;
+	padding:0px;
+}
+#nav li{
+	font-size:25px;
+	padding:7px;
+	float:left;
+	list-style:none;
+	color:purple;
+	background-color:darkgray;
+	border:solid purple;
+	border-style:ridge;
+	border-radius:7px;
+}
+#nav li:hover{
+	background-color:white;
+	font-size:30px;
+	animation-name:boneanimate2;
+	animation-duration:4s;
+	animation-fill-mode:forwards;
+}
+@keyframes boneanimate {
+	25% {color:red;}
+	50% {color:cyan;}
+	75% {color:red;}
+	100% {color:purple;}
+}
+@keyframes boneanimate2 {
+	from {background-color:white; color:black;}
+	to {background-color:black; color:white;}
+}
+@keyframes boneanimate3 {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+#bonetext:hover{
+	animation-name:boneanimate;
+	animation-duration:4s;
+	animation-fill-mode:forwards;
+}
+#bonetext{
+	text-align:center;
+	color:purple;
+	font-size:50px;
+}
+img{
+	border:solid red;
+	border-style:dashed;
+	position:center;
+	margin:20px;
+}
+img:hover{
+	animation-name:boneanimate3;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+/* RGB coloring: (r, g, b, a) a is opacity in percent */
+/* 	background-color:gray;
+	background-image:url(https://images-na.ssl-images-amazon.com/images/I/71OcYsk%2Bx8L._AC_SY355_.jpg);
+	background-repeat:repeat-x;
+	background-attachment:scroll;
+	background-position:center;
+
+	shorthand:
+	background: gray url(https://images-na.ssl-images-amazon.com/images/I/71OcYsk%2Bx8L._AC_SY355_.jpg) repeat-x scroll center;
+
+	C I R A P
+	color, image, repeat, attachment, position
+	*/

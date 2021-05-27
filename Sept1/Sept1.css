@@ -1,0 +1,30 @@
+*{
+	padding:0;
+	margin:0;
+	border:0;
+}
+@media only screen and (max-width:767px){
+	*{background-color:purple;}
+	.grid1{width:75%;}
+	.grid2{width:25%;}
+
+}
+@media only screen and (min-width:767px){
+	*{background-color:blue;}
+	.grid1{width:50%;}
+	.grid2{width:50%;}
+}
+@media only screen and (min-width:1000px){
+	*{background-color:crimson;}
+	.grid1{width:25%;}
+	.grid2{width:75%;}
+}
+[class*="grid"]{
+	border:solid purple 1px;
+	display:inline;
+}
+.container{
+	display:grid;
+	width:100%;
+}
+/* sept1: won't display rows in line. */

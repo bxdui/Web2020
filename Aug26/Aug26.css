@@ -1,0 +1,79 @@
+/* 
+https://www.w3schools.com/css/css_rwd_intro.asp
+
+What are ::before and ::after, [class] selector, content CSS, clear CSS, display:table, @media? 
+Mobile-first design: instead of shrinking to mobile, phrase it to expand when larger than mobile
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+[class*="col"] {
+	float:left;
+	padding:15px;
+	border: 1px solid purple;
+}
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+/* Mobile-second
+@media only screen and (max-width:758px){
+	[class*="col"] {width:100%}
+
+	Mobile-first:
+	*/
+[class*="col"] {
+	width:100%
+}
+
+
+@media only screen and (min-width:600px){
+	/* For tablet */
+	.tcol1 {width:10%;}
+	.tcol2 {width:20%;}
+	.tcol3 {width:30%;}
+	.tcol4 {width:40%;}
+	.tcol5 {width:50%;}
+	.tcol6 {width:60%;}
+	.tcol7 {width:70%;}
+	.tcol8 {width:80%;}
+	.tcol9 {width:90%;}
+	.tcol10 {width:100%;}
+}
+
+@media only screen and (min-width:758px){
+	/* For desktop */
+	.col1 {width:10%;}
+	.col2 {width:20%;}
+	.col3 {width:30%;}
+	.col4 {width:40%;}
+	.col5 {width:50%;}
+	.col6 {width:60%;}
+	.col7 {width:70%;}
+	.col8 {width:80%;}
+	.col9 {width:90%;}
+	.col10 {width:100%;}
+}
+
+/* Typical sizes: 
+
+ Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+ Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+ Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+ Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+ Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...};
+*/

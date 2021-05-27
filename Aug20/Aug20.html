@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>August 20</title>
+	<link rel="stylesheet" href="Aug20.css">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+
+<body>
+	<nav>
+		<ul id="navMenu">
+			<li><a href="https://www.burritorodeo.com/" target="_blank"><img src="https://www.burritorodeo.com/sites/all/themes/rodeo/images/rodeo_logo.png" alt="Rodeo" id="boneZones"></a></li>
+			<li><a href="https://www.Qdoba.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Qdoba_Logo.svg/1280px-Qdoba_Logo.svg.png" alt="Qdoba" id="boneZones"></a></li>
+			<li><a href="https://www.solaztecamqt.net/" target="_blank"><img src="https://le-cdn.websites.hibu.com/3c5c951e3934434c9d899886429866cd/dms3rep/multi/opt/l-4527af4c-396w.png" alt="Sol Azteca" id="boneZones"></a></li>
+		</ul>
+	</nav>
+
+	<header id="head">
+		<h1>Welcome to the Bone Zone</h1>
+		<p id="headerP">Brad Bernstein's Scientifically Proven Exquisite Mexican Eateries</p>
+	</header>
+</body>
+
+<!-- Copied from W3: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+<script> 
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	  var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+	    document.getElementById("navMenu").style.top = "0";
+	  } else {
+	    document.getElementById("navMenu").style.top = "-1000px";
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
+</script>
+
+</html>
+
+<!-- Old table:
+		<nav>
+		<details id="bonezones">
+			<summary>Certified Bone Zones</summary>
+			<ul id="navmenu">
+				<li><a href="https://www.burritorodeo.com/" target="_blank">Rodeo</a></li>
+				<li><a href="https://www.Qdoba.com/" target="_blank">Qdoba</a></li>
+				<li><a href="https://www.solaztecamqt.net/" target="_blank">Sol Azteca</a></li>
+			</ul>
+		</details>
+	</nav>
+	-->

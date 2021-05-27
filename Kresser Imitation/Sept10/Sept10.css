@@ -1,0 +1,49 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	box-sizing:border-box;
+	font-family:Arial;
+	letter-spacing:.1ch;
+	font-size:15px;
+}
+.academy{
+	padding:.6rem;
+	background:rgb(38, 156, 155);
+	color:white;
+	text-align:center;
+	letter-spacing:.1ch;
+	font-size:15px;
+}
+.search{
+	float:right;
+	margin-right:2rem;
+}
+.navbar{
+	height:3.1rem;
+	background:#FAFAFA;
+	border-bottom:1px solid #efefef;
+}
+.searchL > li{
+	float:left;
+}
+.navbarL > li{
+	float:left;
+	padding:1rem;
+}
+input{
+	padding:0.5rem;
+}
+button{
+	padding:inherit;
+}
+ul{
+	list-style:none;
+}
+li button{
+	background:url("search.svg");
+	background-size:contain;
+	width:1.6rem;
+	height:1.6rem;
+}
+

@@ -1,0 +1,23 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+div .gallerycontainer{
+	width:100%;
+	margin:10px;
+	overflow:hidden;
+}
+.gallery1, .gallery2, .gallery3, .gallery4{
+	margin-left:2%;
+	float:left;
+	width:200px;
+	height:400px;
+	background:black;
+	border:solid purple 20px;
+	/* border-top:solid purple 20px;
+	border-left:solid purple 20px;
+	border-bottom: solid purple 20px; */
+}
+/* .gallery4{
+	border-right:solid purple 20px; */

@@ -1,0 +1,38 @@
+*{
+	/*
+	margin:0;
+	padding:0;
+	border:0;
+	*/
+}
+*{
+	background-color:blue;
+	color:white;
+}
+.C1{
+	display:none;
+}
+.C2M{
+	text-align:center;
+}
+@media (min-width:767px){
+	.C2M > div{background-color:gray; color:black;}
+	.C2M{text-align:center;}
+	.C1{display:none;}
+}
+@media (min-width:1000px){
+	*{background-color:gray;}
+	.C1{
+		display:grid;
+		grid-template-columns:1fr 2fr 1fr;
+		width:100%;}
+	.C1 > div{background-color:darkgray; color:black;}
+	.C2M{display:none;}
+}
+[class*="A"], [class*="B"]{
+	padding:2rem;
+	border:solid purple 1px;
+}
+.navT{
+	list-style:none;
+}

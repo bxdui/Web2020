@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Animation Playground</title>
+	<style>
+		body{
+			background-color:crimson;
+		}
+		#bonelist{
+			border:5px;
+			margin:10px;
+			border-style:ridge;
+			border-color:purple;
+			background-color:gray;
+			float:right;
+			z-index: 1;
+  			top: 0;  		
+  			left: 0;
+  			overflow-x:hidden;
+  			display:block;
+		}
+		nav {
+			float:right;
+		}
+		@keyframes bones{
+			0%   {background-color:crimson; color:gray;}
+  			.5%  {background-color:gray; color:gray;}
+  			1.5% {background-color:crimson; color:white;}
+  			100% {background-color:crimson;}
+		}
+		a:hover{
+			color:white;
+			font-size:1.1em;
+			animation-name:bones;
+			animation-duration:100s;
+		}
+		p{
+			color:blue;
+			border:5px;
+		}
+		p:hover{
+			animation-name:bones;
+			animation-duration:50s;
+			border:5px;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div id="bonelist">
+			<a href="#">Bone1</a>
+			<a href="#">Bone2</a>
+			<a href="#">Bone3</a>
+		</div>
+	</nav>
+	<div style="padding-top:1000px"></div>
+	<p>BONE</p>
+</body>
+</html>

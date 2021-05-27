@@ -1,0 +1,15 @@
+ul{
+	list-style: none;
+}
+li{
+	display: inline;
+}
+.media > li{
+	padding: 10%;
+	border: 2px solid gray
+	background-color: #5F00D3;
+	color: #eee
+}
+header{
+	width: 100%;
+}
